@@ -1,4 +1,4 @@
-#<<<----------ASSIGNMENT-1 PART-1--------------------->>>>
+#<<<------------------------------ASSIGNMENT-1 PART-1--------------------------------->>>>
 
 import json
 employee_data = [
@@ -57,7 +57,7 @@ for emp in employees:
     print(f"Name: {emp.name}, DOB: {emp.dob}, Height: {emp.height}, City: {emp.city}, State: {emp.state}")
 
 
-#<<<<<<<-------------ASSIGNMENT-1 PART-2--------------------------->>>>>
+#<<<<<<<---------------------------------ASSIGNMENT-1 PART-2---------------------------------------->>>>>
 
 import json
 indian_states_capitals = {
@@ -77,3 +77,5 @@ with open("states_capitals.json", "r") as json_file:
 print("Indian States and Capitals:")
 for state, capital in indian_states_capitals.items():
     print(f"{state}: {capital}")
+
+#<<<<<<<-------------------------------ASSIGNMENT-2------------------------------------>>>>>>>>>>>>>>>>
