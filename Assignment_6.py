@@ -79,3 +79,72 @@ for state, capital in indian_states_capitals.items():
     print(f"{state}: {capital}")
 
 #<<<<<<<-------------------------------ASSIGNMENT-2------------------------------------>>>>>>>>>>>>>>>>
+
+class Dog:
+    def __init__(self, name, age, coat_color):
+        self.name = name
+        self.age = age
+        self.coat_color = coat_color
+
+    def bark(self):
+        print(f"{self.name} is barking: Woof woof!")
+
+    def fetch(self, item):
+        print(f"{self.name} is fetching the {item}.")
+
+    def birthday(self):
+        self.age += 1
+        print(f"{self.name} just turned {self.age} years old!")
+
+    def description(self):
+        print(f"{self.name} is {self.age} years old.")
+
+    def get_info(self):
+        print(f"{self.name}'s coat color is {self.coat_color}.")
+
+
+class JackRussellTerrier(Dog):
+    def __init__(self, name, age, coat_color):
+        super().__init__(name, age, coat_color)
+
+    def fetch_ball(self):
+        print(f"{self.name} is fetching the ball.")
+
+    def jump_high(self):
+        print(f"{self.name} can jump really high!")
+
+
+class Bulldog(Dog):
+    def __init__(self, name, age, coat_color):
+        super().__init__(name, age, coat_color)
+
+    def snore(self):
+        print(f"{self.name} is snoring loudly.")
+
+    def guard_home(self):
+        print(f"{self.name} is guarding the home.")
+if __name__ == "__main__":
+    dog1 = Dog("Buddy", 3, "Golden")
+    dog2 = Dog("Max", 2, "Black")
+
+    dog1.description()
+    dog1.get_info()
+    dog1.bark()
+
+    dog2.description()
+    dog2.get_info()
+    dog2.fetch("ball")
+
+    jack_russell = JackRussellTerrier("Jack", 1, "White and Brown")
+    jack_russell.description()
+    jack_russell.get_info()
+    jack_russell.fetch("frisbee")
+    jack_russell.jump_high()
+
+    bulldog = Bulldog("Rocky", 4, "Brindle")
+    bulldog.description()
+    bulldog.get_info()
+    bulldog.bark()
+    bulldog.snore()
+    bulldog.guard_home()
+
